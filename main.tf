@@ -17,3 +17,9 @@ resource "null_resource" "time_3" {
         always_run = "${timestamp()}"
     }
 }
+
+resource "null_resource" "time_4" {
+    triggers = {
+        always_run = "${timestamp()}"
+    }
+}
